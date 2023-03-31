@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // optional
-import "./seemore.css";
+import "./linkeffect.css";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
