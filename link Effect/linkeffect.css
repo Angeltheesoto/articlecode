@@ -1,0 +1,76 @@
+.linkeffect-link {
+  display: block;
+  width: 100%;
+}
+
+.linkeffect-container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.linkeffect-text {
+  height: 1rem;
+}
+
+.linkeffect-arrow {
+  transition: 2s ease;
+  display: none;
+}
+
+.linkeffect-hover-effect:hover .linkeffect-arrow {
+  animation: slide 2s linear infinite;
+  display: inline-block;
+  color: red;
+}
+
+.linkeffect-hover-effect:hover .linkeffect-single-arrow {
+  display: none;
+}
+
+.linkeffect-hover-effect-reverse:hover .linkeffect-arrow {
+  animation: slidereverse 2s linear infinite;
+  display: inline-block;
+  color: red;
+}
+
+.linkeffect-hover-effect-reverse:hover .linkeffect-single-arrow {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes slidereverse {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-2px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
